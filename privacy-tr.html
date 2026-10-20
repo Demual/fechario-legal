@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik politikası · Fechario</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #17201f; background: #f6fbfa;
+  }
+  a { color: #00695c; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #00796b; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #d5e3e0; vertical-align: top; }
+  th { font-weight: 600; }
+  .tabla { overflow-x: auto; }
+  nav.idiomas { font-size: .9rem; margin: 0 0 1.5rem; opacity: .85; }
+  nav.idiomas a { white-space: nowrap; }
+  ul.idiomas { columns: 2; padding-inline-start: 1.2rem; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dfe9e7; background: #0f1716; }
+    a, h2 { color: #7fd6c8; }
+    th, td { border-color: #2a3735; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Fechario gizlilik politikası</h1>
+<p>Son güncelleme: 20 Ekim 2026</p>
+<nav class="idiomas" aria-label="Diğer diller">Diğer diller: <a href="privacy-id.html" lang="id">Bahasa Indonesia</a> · <a href="privadesa-ca.html" lang="ca">Català</a> · <a href="datenschutz-de.html" lang="de">Deutsch</a> · <a href="privacy-en.html" lang="en">English</a> · <a href="privacidad-es.html" lang="es">Español</a> · <a href="confidentialite-fr.html" lang="fr">Français</a> · <a href="privacy-it.html" lang="it">Italiano</a> · <a href="privacidade-pt.html" lang="pt">Português</a> · <a href="privacy-ru.html" lang="ru">Русский</a> · <a href="privacy-ar.html" lang="ar" dir="rtl">العربية</a> · <a href="privacy-hi.html" lang="hi">हिन्दी</a> · <a href="privacy-zh.html" lang="zh">中文</a> · <a href="privacy-ja.html" lang="ja">日本語</a> · <a href="privacy-ko.html" lang="ko">한국어</a></nav>
+<p>Fechario, süresi dolan şeyleri (garantiler, araç muayeneleri, sigortalar, belgeler, abonelikler ve son kullanma tarihleri) kaydetmek ve süreleri dolmadan önce hatırlatma almak için JR Soft'un (bundan sonra “biz”) geliştirdiği bir uygulamadır.</p>
+<h2>1. Özet</h2>
+<ul>
+<li><strong>Kaydettiklerin ve fotoğrafların telefonunda kalır.</strong> Hesap ya da üyelik yoktur ve kayıtlarını ya da fotoğraflarını alan hiçbir sunucumuz yoktur.</li>
+<li>Uygulama <strong>Google AdMob reklamları</strong> gösterir. Bunun için Google SDK'sı bazı cihaz verilerini kendisi toplar (bölüm 4).</li>
+<li>Tarihlerin okunmasını ve ürünün arka plandan ayrılmasını <strong>telefonun kendisinde Google ML Kit</strong> yapar. Fotoğraflar ve metin telefondan çıkmaz, ancak SDK Google'a teknik kullanım verileri gönderir (bölüm 4).</li>
+<li><strong>Kendimize ait</strong> hiçbir analiz aracı kullanmayız.</li>
+<li>Yalnızca bize e-postayla yazdıklarını alırız.</li>
+</ul>
+<h2>2. Uygulama hangi verileri nerede işler</h2>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Nerede saklanır</th>
+<th>Ne için</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kaydettiklerin: ad, tür, tarihler, mağaza, referans, tutar ve notlar</td>
+<td>Yalnızca telefonunda</td>
+<td>Uygulamanın çalışması (kayıtlarını göstermek ve sana hatırlatmak)</td>
+</tr>
+<tr>
+<td>Fiş, etiket, belge ve ürün fotoğrafları</td>
+<td>Yalnızca telefonunda, uygulamanın özel klasöründe</td>
+<td>Her kayıtla birlikte saklamak, tarihi okumak ve istersen ürünü arka plandan ayırmak</td>
+</tr>
+<tr>
+<td>Fotoğraflarda okunan metin</td>
+<td>Telefonda işlenir (Google ML Kit, uygulamaya dahil olan modelle) ve ayrıca saklanmaz</td>
+<td>Sana tarihi, mağazayı ve tutarı önermek</td>
+</tr>
+<tr>
+<td>Arka plandan ayrılmış ürün</td>
+<td>Telefonda oluşturulur (Google ML Kit, Google Play services'in indirdiği bir modelle) ve özel klasörde saklanır</td>
+<td>Ürünü listede ve hatırlatmalarda arka plansız göstermek</td>
+</tr>
+<tr>
+<td>Ayarlar (hatırlatma saati, varsayılan garanti)</td>
+<td>Yalnızca telefonunda</td>
+<td>Tercihlerini hatırlamak</td>
+</tr>
+<tr>
+<td>SIM kartın ülkesi</td>
+<td>Telefonda, özel bir izin gerekmeden okunur ve telefondan çıkmaz</td>
+<td>Varsayılan garantiyi önermek ve “JR Soft'un diğer uygulamaları” bölümünde yalnızca ülkendeki uygulamaları göstermek</td>
+</tr>
+<tr>
+<td>Bize öneri gönderirsen e-posta adresin ve yazdıkların</td>
+<td>E-posta kutumuzda</td>
+<td>Sana yanıt vermek. Mesajın altında uygulamanın sürümü ve dili yer alır; bunları göndermeden önce silebilirsin</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uygulama yalnızca <strong>sana bildirim gönderme</strong> (hatırlatmalar) izni ister. Kamera, depolama, konum ya da kişiler için <strong>izin istemez</strong>: fotoğrafı sistem kamerası çeker ya da fotoğraf seçiciyle sen seçersin.</p>
+<h2>3. Hukuki dayanak</h2>
+<ul>
+<li><strong>İstediğin hizmetin yerine getirilmesi</strong> (GDPR md. 6.1.b): kaydettiklerini saklamak, seçtiğin fotoğrafları okumak ve kırpmak, hatırlatmaları planlamak; bunların hepsi telefonunda.</li>
+<li><strong>Meşru menfaat</strong> (md. 6.1.f):</li>
+<li>ML Kit'in ve Google SDK'larının çalışmak, performanslarını ölçmek ve hataları düzeltmek için gönderdiği teknik veriler (bölüm 4);</li>
+<li>bize gönderdiğin e-postalara yanıt vermek.</li>
+<li><strong>Onay</strong> (md. 6.1.a); Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de Google formuyla istenir:</li>
+<li>reklam SDK'sının telefonunda bilgi saklaması ya da okuması için;</li>
+<li>ve sana <strong>kişiselleştirilmiş reklam</strong> göstermek için.
+  Onay vermezsen Google sana kişiselleştirilmemiş, sınırlı reklamlar gösterebilir. Google ve ortakları bu reklamları ölçmek ve dolandırıcılığı önlemek için meşru menfaatlerine dayanır; buna aynı formda itiraz edebilirsin.</li>
+</ul>
+<h2>4. Reklamlar (Google AdMob) ve üçüncü taraf SDK'ları</h2>
+<p><strong>Reklamlar.</strong> Uygulama, reklam göstermek ve onayını istemek için <strong>Google Mobile Ads SDK'sını (AdMob)</strong> ve <strong>Google Kullanıcı Mesajlaşma Platformu'nu (UMP)</strong> kullanır. Bu SDK'lar, reklamları göstermek ve ölçmek, analiz yapmak ve dolandırıcılığı önlemek için aşağıdakileri kendileri toplar ve Google ile paylaşır:
+- <strong>IP adresi</strong>; bundan <strong>yaklaşık bir konum</strong> çıkarılır;
+- <strong>cihaz kimlikleri</strong>: reklam kimliği ve app set ID;
+- <strong>uygulamayla ve reklamlarla etkileşimlerin</strong> (örneğin açılışlar ve dokunmalar);
+- <strong>teşhis verileri</strong> (uygulamanın ve SDK'nın performansı).</p>
+<p>Uygulama, reklam isteklerine kaydettiklerinden hiçbir şey eklemez.</p>
+<p>Daha fazla bilgi: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>Kesin coğrafi konum.</strong> Reklam onay mesajını Google, tüm reklam ortakları için ortak olan bir metinle gösterir; bu yüzden mesajda kesin coğrafi konumdan söz edilir. Bu uygulamanın konum izni yoktur ve SDK'ya GPS konumunu vermez. Google'a göre reklam SDK'sı yalnızca IP adresinden çıkarılan yaklaşık konumu kullanır. Bu kullanımı “Seçenekleri yönet” bölümünden reddedebilirsin.</p>
+<p><strong>Google ML Kit.</strong> Fotoğraflardaki metni okur ve istersen ürünü arka plandan ayırır; bunu telefonun kendisinde yapar. Görüntüler ve metin <strong>telefondan çıkmaz</strong>. SDK, teşhis ve kullanım analizi için Google'a şifreli olarak şunları gönderir:
+- cihaz verileri (üretici, model ve Android sürümü) ile uygulama verileri (paket adı ve sürüm);
+- bu kuruluma ait kimlikler;
+- Google Play services üzerinden çalışan ürünü arka plandan ayırma işleminde ayrıca bir cihaz kimliği;
+- performans ölçümleri, görüntünün biçimi ve boyutu ve hata kodları.</p>
+<p>Google'a göre bu veriler üçüncü taraflara aktarılmaz. Ürünü arka plandan ayırma modelini, sen kullanmasan bile, uygulama yüklenirken <strong>Google Play services</strong> indirir.</p>
+<p><strong>Firebase Remote Config.</strong> Uygulamada bulunur ama kapalıdır: etkinleştirilmediği sürece hiçbir şey göndermez. Bir gün etkinleştirilirse bu politika bunu belirtecektir.</p>
+<p><strong>Google Play.</strong> “Uygulamayı puanla”, kendi koşullarına tabi olan Google Play değerlendirme özelliğini kullanır.</p>
+<h2>5. Uluslararası veri aktarımları</h2>
+<p>Google LLC, SDK'larının topladığı verileri Amerika Birleşik Devletleri'nde işleyebilir. Google LLC, <strong>AB-ABD Veri Gizliliği Çerçevesi</strong>'ne (EU-U.S. Data Privacy Framework), bu çerçevenin <strong>Birleşik Krallık uzantısına</strong> ve <strong>İsviçre-ABD Çerçevesi</strong>'ne katılmıştır; ayrıca standart sözleşme maddelerini de kullanır.</p>
+<p>E-posta hizmetimizi aynı güvencelerle Google (Gmail) sağlar.</p>
+<h2>6. Onayını geri çekme ve verilerini kontrol etme</h2>
+<ul>
+<li><strong>Reklamlar</strong>: uygulamada <em>Ayarlar → Reklam gizlilik seçenekleri</em> (yasanın gerektirdiği yerlerde görünür: AEA, Birleşik Krallık ve İsviçre). Orada onayını, verdiğin kadar kolayca geri çekebilir ya da meşru menfaate itiraz edebilirsin. Reklam kimliğini telefonunun Google ayarlarından sıfırlayabilir ya da silebilirsin.</li>
+<li><strong>Hatırlatmalar</strong>: telefonun bildirim ayarlarından kapat ya da her kaydın hatırlatmalarını kaldır.</li>
+<li><strong>Verilerin</strong>: her kaydı kendi sayfasından sil ya da uygulamayı kaldır; her şey telefondan silinir.</li>
+</ul>
+<h2>7. Yedekler ve telefon değiştirme</h2>
+<p><em>Ayarlar → Yedek al</em> ile verilerini ve fotoğraflarını içeren bir .zip dosyası, <em>Tablo olarak dışa aktar (CSV)</em> ile de kayıtlarını içeren bir tablo oluşturabilirsin. İkisi de <strong>senin seçtiğin yere</strong> kaydedilir (örneğin kendi depolama alanına ya da kişisel bulutuna; o hizmetin koşullarıyla). Bu dosyalar bize ulaşmaz.</p>
+<p>Android'in buluta yedeklemesi (Google hesabındaki) bu uygulamanın verileri için kapalıdır: hiçbiri yüklenmez. Android, yeniden yükleyebilmek için yüklü uygulamalarının listesini hesabında saklar; ancak bu listeyi Google yönetir ve listede uygulamanın verileri yoktur.</p>
+<p>Yeni bir telefonu kurarken verilerini kabloyla ya da kablosuz olarak doğrudan eski telefondan kopyalarsan uygulamanın verileri (kayıtların, fotoğrafları ve ayarların) yeni telefona geçebilir. Bu aktarımı sen istersin; Android de kendi aracıyla ya da telefon üreticisinin aracıyla, onların koşullarıyla yapar. Android belgelerine göre veriler sunuculardan geçmeden bir telefondan diğerine gider. Hiçbir durumda bizim sunucularımızdan geçmez: aktarımı bir Android özelliğiyle sen yaparsın ve JR Soft hiçbir veri almaz.</p>
+<p>Aktarımın yapılıp yapılmayacağı Android sürümüne ve üreticiye bağlıdır (Android 8 ve öncesinde yapılmaz), bu yüzden bunu garanti edemeyiz. Yeni telefonu eski telefon olmadan Google hesabının yedeğinden kurarsan bu uygulamanın verileri geri gelmez, çünkü o yedekte yoktur.</p>
+<p>Yalnızca eski telefonda işe yarayan şeyler aktarılmaz; örneğin önceden planlanmış hatırlatmalar, SDK kimlikleri ya da reklamlarla ilgili tercihin: uygulama yeni telefonda hatırlatmaları yeniden planlar ve tercihini sana yeniden sorar.</p>
+<h2>8. Reşit olmayanlar</h2>
+<p>Uygulama yetişkinler için tasarlanmıştır ve 16 yaşından küçüklere yönelik değildir. Kişiselleştirilmiş reklamlar, AB'de bu yaşın altındakilerin kendi başlarına veremeyeceği bir onay gerektirir (GDPR md. 8; İspanya'da 14 yaş: İspanya'nın kişisel verilerin korunmasına ilişkin organik kanunu LOPDGDD md. 7).</p>
+<h2>9. Saklama süresi</h2>
+<ul>
+<li>Kaydettiklerin, sen silene ya da uygulamayı kaldırana kadar telefonunda saklanır.</li>
+<li>Bize gönderdiğin e-postalar, sana yanıt vermek için gereken süre boyunca ve en fazla son yanıttan itibaren bir yıl saklanır.</li>
+<li>Google SDK'larının topladığı veriler Google'ın politikasına göre saklanır.</li>
+</ul>
+<h2>10. Hakların</h2>
+<p>Bize yazarak erişim, düzeltme, silme, itiraz, kısıtlama ve taşınabilirlik haklarını kullanabilirsin. Kaydettiklerin bize ulaşmadığı için bu hakların çoğunu doğrudan uygulamada kullanırsın (dışa aktarma, düzenleme, silme). SDK'larının topladığı verilerle ilgili taleplerini Google, <a href="https://myaccount.google.com">https://myaccount.google.com</a> ve <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> adreslerinde karşılar.</p>
+<p>Verilerini doğru işlemediğimizi düşünüyorsan İspanya Veri Koruma Ajansı'na (Agencia Española de Protección de Datos, <a href="https://www.aepd.es">www.aepd.es</a>) ya da yaşadığın, çalıştığın veya sorunun yaşandığı ülkedeki veri koruma makamına şikâyette bulunabilirsin.</p>
+<h2>11. Değişiklikler</h2>
+<p>Bu politika değişirse bunu Google Play'deki uygulama sürüm notlarında belirtir ve yukarıdaki tarihi değiştiririz.</p>
+<h2>12. Veri sorumlusu ve iletişim</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+<footer>
+<p>Fechario · JR Soft (Javier Román Sáez) · <a href="mailto:demual@gmail.com">demual@gmail.com</a> · <a href="./">Diğer diller</a></p>
+</footer>
+
+</body>
+</html>

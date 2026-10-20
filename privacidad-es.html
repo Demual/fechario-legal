@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Fechario</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #17201f; background: #f6fbfa;
+  }
+  a { color: #00695c; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #00796b; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #d5e3e0; vertical-align: top; }
+  th { font-weight: 600; }
+  .tabla { overflow-x: auto; }
+  nav.idiomas { font-size: .9rem; margin: 0 0 1.5rem; opacity: .85; }
+  nav.idiomas a { white-space: nowrap; }
+  ul.idiomas { columns: 2; padding-inline-start: 1.2rem; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dfe9e7; background: #0f1716; }
+    a, h2 { color: #7fd6c8; }
+    th, td { border-color: #2a3735; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de Fechario</h1>
+<p>Última actualización: 20 de octubre de 2026</p>
+<nav class="idiomas" aria-label="Otros idiomas">Otros idiomas: <a href="privacy-id.html" lang="id">Bahasa Indonesia</a> · <a href="privadesa-ca.html" lang="ca">Català</a> · <a href="datenschutz-de.html" lang="de">Deutsch</a> · <a href="privacy-en.html" lang="en">English</a> · <a href="confidentialite-fr.html" lang="fr">Français</a> · <a href="privacy-it.html" lang="it">Italiano</a> · <a href="privacidade-pt.html" lang="pt">Português</a> · <a href="privacy-tr.html" lang="tr">Türkçe</a> · <a href="privacy-ru.html" lang="ru">Русский</a> · <a href="privacy-ar.html" lang="ar" dir="rtl">العربية</a> · <a href="privacy-hi.html" lang="hi">हिन्दी</a> · <a href="privacy-zh.html" lang="zh">中文</a> · <a href="privacy-ja.html" lang="ja">日本語</a> · <a href="privacy-ko.html" lang="ko">한국어</a></nav>
+<p>Fechario es una App de JR Soft (en adelante, «nosotros») para apuntar las cosas que vencen (garantías, inspecciones del vehículo, seguros, documentos, suscripciones y fechas de caducidad) y recibir avisos antes de que venzan.</p>
+<h2>1. Resumen</h2>
+<ul>
+<li><strong>Lo que apuntas y tus fotos se quedan en tu móvil.</strong> No hay cuenta ni registro, y no tenemos ningún servidor que reciba tus cosas ni tus fotos.</li>
+<li>La App muestra <strong>anuncios de Google AdMob</strong>. Para eso, el SDK de Google recoge por su cuenta algunos datos del dispositivo (apartado 4).</li>
+<li>La lectura de fechas y el recorte del producto los hace <strong>Google ML Kit en el propio móvil</strong>. Las fotos y el texto no salen de él, pero el SDK envía a Google datos técnicos de uso (apartado 4).</li>
+<li>No usamos ninguna herramienta <strong>propia</strong> de analítica.</li>
+<li>Solo recibimos lo que tú nos escribas por correo.</li>
+</ul>
+<h2>2. Qué datos trata la App y dónde</h2>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Dónde se guarda</th>
+<th>Para qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lo que apuntas: nombre, tipo, fechas, tienda, referencia, importe y notas</td>
+<td>Solo en tu móvil</td>
+<td>Que la App funcione (enseñarte tus cosas y avisarte)</td>
+</tr>
+<tr>
+<td>Fotos de tiques, etiquetas, documentos y productos</td>
+<td>Solo en tu móvil, en la carpeta privada de la App</td>
+<td>Guardarlas con cada cosa, leer la fecha y, si lo pides, recortar el producto</td>
+</tr>
+<tr>
+<td>Texto leído en las fotos</td>
+<td>Se procesa en el móvil (Google ML Kit, con el modelo incluido en la App) y no se guarda aparte</td>
+<td>Proponerte la fecha, la tienda y el importe</td>
+</tr>
+<tr>
+<td>Recorte del producto</td>
+<td>Se hace en el móvil (Google ML Kit, con un modelo que descarga Google Play services) y se guarda en la carpeta privada</td>
+<td>Enseñar el producto sin fondo en la lista y en los avisos</td>
+</tr>
+<tr>
+<td>Ajustes (hora de los avisos, garantía por defecto)</td>
+<td>Solo en tu móvil</td>
+<td>Recordar tus preferencias</td>
+</tr>
+<tr>
+<td>País de la tarjeta SIM</td>
+<td>Se lee en el móvil, sin permisos especiales, y no sale de él</td>
+<td>Proponer la garantía por defecto y enseñar en «Más apps de JR Soft» solo las Apps de tu país</td>
+</tr>
+<tr>
+<td>Tu correo y lo que nos escribas, si nos mandas una sugerencia</td>
+<td>En nuestro correo</td>
+<td>Responderte. El mensaje lleva al pie la versión de la App y su idioma, que puedes borrar antes de enviarlo</td>
+</tr>
+</tbody>
+</table></div>
+<p>La App solo pide permiso para <strong>enviarte notificaciones</strong> (los avisos). <strong>No pide</strong> permisos de cámara, almacenamiento, ubicación ni contactos: la foto la hace la cámara del sistema o la eliges tú con el selector de fotos.</p>
+<h2>3. Base legal</h2>
+<ul>
+<li><strong>Ejecución del servicio que pides</strong> (art. 6.1.b del RGPD): guardar lo que apuntas, leer y recortar las fotos que eliges y programar los avisos, todo en tu móvil.</li>
+<li><strong>Interés legítimo</strong> (art. 6.1.f):</li>
+<li>los datos técnicos que envían ML Kit y los SDK de Google para que funcionen, medirlos y corregir fallos (apartado 4);</li>
+<li>responder a los correos que nos mandas.</li>
+<li><strong>Consentimiento</strong> (art. 6.1.a), que se pide con el formulario de Google en el Espacio Económico Europeo, el Reino Unido y Suiza:</li>
+<li>para que el SDK de anuncios guarde o lea información en tu móvil;</li>
+<li>y para mostrarte <strong>publicidad personalizada</strong>.
+  Si no lo das, Google puede mostrarte anuncios limitados, sin personalizar. Para medirlos y prevenir el fraude, Google y sus socios se apoyan en su interés legítimo, al que puedes oponerte en ese mismo formulario.</li>
+</ul>
+<h2>4. Anuncios (Google AdMob) y SDK de terceros</h2>
+<p><strong>Anuncios.</strong> La App usa el <strong>SDK de Google Mobile Ads (AdMob)</strong> y la <strong>plataforma de mensajes de usuario de Google (UMP)</strong> para mostrar anuncios y pedir tu consentimiento. Estos SDK recogen por su cuenta, y comparten con Google, para mostrar y medir los anuncios, hacer analítica y prevenir el fraude:
+- la <strong>dirección IP</strong>, de la que se deduce una <strong>ubicación aproximada</strong>;
+- <strong>identificadores del dispositivo</strong>: el ID de publicidad y el app set ID;
+- tus <strong>interacciones con la App y con los anuncios</strong> (por ejemplo, aperturas y toques);
+- <strong>diagnósticos</strong> (rendimiento de la App y del SDK).</p>
+<p>La App no añade a las peticiones de anuncios nada de lo que apuntas.</p>
+<p>Más información: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>Geolocalización precisa.</strong> El mensaje de consentimiento de los anuncios lo muestra Google con un texto común a todos sus socios publicitarios, y por eso menciona la geolocalización precisa. Esta App no tiene permiso de ubicación ni pasa la ubicación del GPS al SDK. Según Google, su SDK de anuncios solo usa la ubicación aproximada que se deduce de la dirección IP. Puedes rechazar ese uso en «Gestionar opciones».</p>
+<p><strong>Google ML Kit.</strong> Lee el texto de las fotos y, si lo pides, separa el producto del fondo, en el propio móvil. Las imágenes y el texto <strong>no salen del teléfono</strong>. Para diagnóstico y analítica de uso, el SDK envía a Google, cifrado:
+- datos del dispositivo (fabricante, modelo y versión de Android) y de la App (nombre del paquete y versión);
+- identificadores de esta instalación;
+- en el recorte del producto, que va por Google Play services, también un identificador del dispositivo;
+- métricas de rendimiento, formato y tamaño de la imagen, y códigos de error.</p>
+<p>Según Google, no los pasa a terceros. El modelo del recorte lo descarga <strong>Google Play services</strong> al instalar la App, aunque no lo uses.</p>
+<p><strong>Firebase Remote Config.</strong> La App lo incluye, desactivado: no envía nada mientras no se active. Si algún día se activa, esta política lo dirá.</p>
+<p><strong>Google Play.</strong> «Valora la app» usa la función de valoraciones de Google Play, con sus propias condiciones.</p>
+<h2>5. Transferencias internacionales</h2>
+<p>Google LLC puede tratar en Estados Unidos los datos que recogen sus SDK. Google LLC está adherida al <strong>Marco de Privacidad de Datos UE-EE. UU.</strong> (Data Privacy Framework), a su <strong>extensión para el Reino Unido</strong> y al <strong>Marco Suiza-EE. UU.</strong>, y usa además cláusulas contractuales tipo.</p>
+<p>Nuestro correo lo presta Google (Gmail), con las mismas garantías.</p>
+<h2>6. Cómo retirar el consentimiento y controlar tus datos</h2>
+<ul>
+<li><strong>Anuncios</strong>: en la App, <em>Ajustes → Opciones de privacidad de los anuncios</em> (aparece donde la ley lo exige: EEE, Reino Unido y Suiza). Ahí puedes retirar el consentimiento u oponerte al interés legítimo, tan fácilmente como lo diste. También puedes restablecer o eliminar el ID de publicidad en los ajustes de Google de tu móvil.</li>
+<li><strong>Avisos</strong>: desactívalos en los ajustes de notificaciones del móvil o quita los avisos de cada cosa.</li>
+<li><strong>Tus datos</strong>: borra cada cosa desde su ficha o desinstala la App, y todo desaparece del móvil.</li>
+</ul>
+<h2>7. Copias de seguridad y cambio de móvil</h2>
+<p>Desde <em>Ajustes → Guardar una copia</em> puedes crear un archivo .zip con tus datos y fotos, y desde <em>Exportar a hoja de cálculo (CSV)</em>, una tabla con tus cosas. Los dos se guardan <strong>donde tú elijas</strong> (por ejemplo, en tu propio almacenamiento o en tu nube personal, con las condiciones de ese servicio). Nosotros no recibimos esos archivos.</p>
+<p>La copia de seguridad de Android en la nube (la de tu cuenta de Google) está desactivada para los datos de esta App: no se sube ninguno. Android sí guarda en tu cuenta la lista de las apps que tenías instaladas, para volver a instalarlas, pero esa lista la gestiona Google y no lleva datos de la App.</p>
+<p>Si al configurar un móvil nuevo copias tus datos directamente desde el antiguo, con cable o sin él, los datos de la App (tus cosas, sus fotos y tus ajustes) pueden pasar al móvil nuevo. Ese traspaso lo pides tú y lo hace Android, con su herramienta o con la del fabricante del móvil y con sus propias condiciones. Según la documentación de Android, va de un móvil a otro sin pasar por servidores. En ningún caso pasa por los nuestros: el traspaso lo haces tú con una función de Android y JR Soft no recibe ningún dato.</p>
+<p>Que se haga depende de la versión de Android y del fabricante (en Android 8 o anterior no se hace), así que no podemos garantizarlo. Si configuras el móvil nuevo desde la copia de tu cuenta de Google, sin el antiguo, los datos de esta App no vuelven, porque no están en esa copia.</p>
+<p>No se traspasa lo que solo sirve en el móvil antiguo, como los avisos ya programados, los identificadores de los SDK o tu elección sobre los anuncios: en el móvil nuevo la App volverá a programar los avisos y te volverá a pedir tu elección.</p>
+<h2>8. Menores</h2>
+<p>La App está pensada para adultos y no está dirigida a menores de 16 años. Los anuncios personalizados requieren un consentimiento que los menores de esa edad no pueden dar por sí mismos en la UE (art. 8 del RGPD; 14 años en España, art. 7 de la LOPDGDD).</p>
+<h2>9. Conservación</h2>
+<ul>
+<li>Lo que apuntas se conserva en tu móvil mientras no lo borres o desinstales la App.</li>
+<li>Los correos que nos mandas, el tiempo necesario para responderte y, como mucho, un año desde la última respuesta.</li>
+<li>Los datos que recogen los SDK de Google se conservan según la política de Google.</li>
+</ul>
+<h2>10. Tus derechos</h2>
+<p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiéndonos. Como no recibimos lo que apuntas, la mayoría de ellos los ejerces directamente en la App (exportar, editar, borrar). Sobre los datos que recogen sus SDK, Google te los atiende en <a href="https://myaccount.google.com">https://myaccount.google.com</a> y <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+<p>Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>) o ante la autoridad de protección de datos del país donde vives, trabajas o donde ocurrió el problema.</p>
+<h2>11. Cambios</h2>
+<p>Si cambia esta política, lo indicaremos en las notas de la versión de la App en Google Play y cambiaremos la fecha de arriba.</p>
+<h2>12. Responsable y contacto</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+<footer>
+<p>Fechario · JR Soft (Javier Román Sáez) · <a href="mailto:demual@gmail.com">demual@gmail.com</a> · <a href="./">Otros idiomas</a></p>
+</footer>
+
+</body>
+</html>
